@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/service_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/service_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Название услуги"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/service_image"
+        app:layout_constraintTop_toTopOf="@id/service_image"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/service_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Описание услуги"
+        app:layout_constraintStart_toStartOf="@id/service_title"
+        app:layout_constraintTop_toBottomOf="@id/service_title"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

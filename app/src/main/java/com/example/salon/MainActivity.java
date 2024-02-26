@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
             if(loginSuccessful){
                 //Перенести его на homeActivity
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
                 //Заканчиваем эту страницу
                 finish();
