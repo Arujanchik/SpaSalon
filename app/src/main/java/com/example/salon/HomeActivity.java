@@ -34,8 +34,8 @@ public class HomeActivity extends AppCompatActivity implements ServicesAdapter.I
 
     private void initializeServiceData() {
         // Добавьте ваши данные услуг здесь
-        serviceItems.add(new ServiceItem("Пиллинг лица","В салоне по адресу 'Мағжан Жұмабаева 14' делаем пиллинг лица",R.drawable.tock,"3000 теңге","Адрес: Құрманғазы 55А"));
-        serviceItems.add(new ServiceItem("Маска для лица", "Маска для лица – это косметическое средство с выраженным эффектом, с помощью которого можно глубоко очистить кожу, обеспечить ей дополнительное питание или увлажнение.", R.drawable.tock, "Цена: 5000 тенге", "Адрес: Құрманғазы 55А"));
+        serviceItems.add(new ServiceItem("Пиллинг лица","В салоне по адресу 'Мағжан Жұмабаева 14' делаем пиллинг лица",R.drawable.tock,"35$","Құрманғазы 55А"));
+        serviceItems.add(new ServiceItem("Маска для лица", "Маска для лица – это косметическое средство с выраженным эффектом, с помощью которого можно глубоко очистить кожу, обеспечить ей дополнительное питание или увлажнение.", R.drawable.tock, "40$", "Құрманғазы 55А"));
 
 
 
@@ -50,6 +50,8 @@ public class HomeActivity extends AppCompatActivity implements ServicesAdapter.I
         intent.putExtra("TITLE", item.getTitle());
         intent.putExtra("DESCRIPTION", item.getDescription());
         intent.putExtra("IMAGE_RESOURCE_ID", item.getImageResourceId());
+        intent.putExtra("PRICE",item.getPrice());
+        intent.putExtra("ADDRESS",item.getAddress());
         startActivity(intent);
     }
 }
