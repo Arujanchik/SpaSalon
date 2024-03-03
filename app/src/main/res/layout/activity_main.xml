@@ -79,17 +79,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
-            <Button
-                android:id="@+id/btn_login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="LOGIN"
-                android:background="@drawable/btn_round_green_unpressed"
-                android:textAppearance="?android:textAppearanceMedium"
-                app:layout_constraintTop_toBottomOf="@+id/login_password"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="LOGIN"
+                    android:background="@drawable/btn_round_green_unpressed"
+                    android:backgroundTint="@null"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    app:layout_constraintTop_toBottomOf="@+id/login_password"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
             <TextView
                 android:id="@+id/log_in_title"

@@ -3,16 +3,16 @@
     <item>
         <shape
             android:shape="rectangle">
-            <solid android:color="@color/green_300" />
+            <solid android:color="@color/pinkColor" />
             <corners android:radius="10dp"/>
         </shape>
     </item>
     <item android:right="0dp" android:left="0dp" android:bottom="0.5dp">
         <shape
             android:shape="rectangle">
-            <solid android:color="@color/green_200"/>
+            <solid android:color="@color/pinkColor"/>
             <corners android:radius="10dp" />
-            <stroke android:width="2px" android:color="@color/green_300" />
+            <stroke android:width="2px" android:color="@color/pinkColor" />
         </shape>
     </item>
 </layer-list>
