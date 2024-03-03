@@ -27,6 +27,7 @@ public class ServicesAdapter extends RecyclerView.Adapter<ServicesAdapter.ViewHo
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.item_service, parent, false);
+
         return new ViewHolder(view);
     }
 
@@ -35,8 +36,10 @@ public class ServicesAdapter extends RecyclerView.Adapter<ServicesAdapter.ViewHo
     public void onBindViewHolder(ViewHolder holder, int position) {
         ServiceItem service = services.get(position);
         holder.title.setText(service.getTitle());
-        holder.description.setText(service.getDescription());
+//        holder.description.setText(service.getDescription());
         holder.image.setImageResource(service.getImageResourceId());
+        holder.price.setText(service.getPrice()); // Установка цены
+        holder.address.setText(service.getAddress()); // Установка адреса
     }
 
     // Возвращает размер данных
@@ -48,14 +51,18 @@ public class ServicesAdapter extends RecyclerView.Adapter<ServicesAdapter.ViewHo
     // Хранит и перерабатывает представления для повторного использования
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView title;
-        TextView description;
+//        TextView description;
         ImageView image;
+        TextView price; // Добавить цену
+        TextView address; // Добавить адрес
 
         ViewHolder(View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.service_title);
-            description = itemView.findViewById(R.id.service_description);
+//            description = itemView.findViewById(R.id.service_description);
             image = itemView.findViewById(R.id.service_image);
+            price = itemView.findViewById(R.id.service_price); // Инициализация
+            address = itemView.findViewById(R.id.service_address); // Инициализация
             itemView.setOnClickListener(this);
         }
 

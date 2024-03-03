@@ -34,8 +34,8 @@ public class HomeActivity extends AppCompatActivity implements ServicesAdapter.I
 
     private void initializeServiceData() {
         // Добавьте ваши данные услуг здесь
-        serviceItems.add(new ServiceItem("Маска для лица", "В салоне по адресу: 'Құрманғазы 55А' делаем маску для лица. ", R.drawable.tock));
-        serviceItems.add(new ServiceItem("Пиллинг лица","В салоне по адресу 'Мағжан Жұмабаева 14' делаем пиллинг лица",R.drawable.tock));
+        serviceItems.add(new ServiceItem("Пиллинг лица","В салоне по адресу 'Мағжан Жұмабаева 14' делаем пиллинг лица",R.drawable.tock,"3000 теңге","Адрес: Құрманғазы 55А"));
+        serviceItems.add(new ServiceItem("Маска для лица", "Маска для лица – это косметическое средство с выраженным эффектом, с помощью которого можно глубоко очистить кожу, обеспечить ей дополнительное питание или увлажнение.", R.drawable.tock, "Цена: 5000 тенге", "Адрес: Құрманғазы 55А"));
 
 
 
