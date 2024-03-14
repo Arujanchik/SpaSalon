@@ -24,19 +24,6 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        // Настройте здесь свои кнопки и обработчики нажатий
-        Button haircutButton = view.findViewById(R.id.button_haircut);
-        haircutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Запуск DetailActivity с информацией о стрижке
-                // Используйте Intent для передачи данных
-            }
-        });
-
-        // Создайте обработчики для других услуг аналогично
-        // ...
-
         return view;
     }
 }
