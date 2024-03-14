@@ -1,21 +1,20 @@
-package com.example.salon;
+package com.example.salon.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.salon.R;
+import com.example.salon.activity.LoginActivity;
 
 
 public class RegistrationActivity extends AppCompatActivity {
@@ -48,7 +47,7 @@ public class RegistrationActivity extends AppCompatActivity {
         TextView textViewForLogin = findViewById(R.id.textView_for_login);
         textViewForLogin.setOnClickListener(v -> {
             // Здесь выполните переход на страницу mainActivity для логина
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(intent);
         });
 

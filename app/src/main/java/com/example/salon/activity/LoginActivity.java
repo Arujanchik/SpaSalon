@@ -1,4 +1,4 @@
-package com.example.salon;
+package com.example.salon.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,8 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.salon.R;
 
-public class MainActivity extends AppCompatActivity {
+
+public class LoginActivity extends AppCompatActivity {
 
     private EditText email;
     private EditText password;
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         loginFunction();
     }
     //Логин функциясы
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             }
             if(hasError){return;}
 
-            ProgressDialog mDialog = new ProgressDialog(MainActivity.this);
+            ProgressDialog mDialog = new ProgressDialog(LoginActivity.this);
             mDialog.setMessage("In process..");
             mDialog.show();
 
@@ -52,10 +54,8 @@ public class MainActivity extends AppCompatActivity {
             boolean loginSuccessful = true;
 
             if(loginSuccessful){
-                //Перенести его на homeActivity
-                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
-                //Заканчиваем эту страницу
                 finish();
                 mDialog.dismiss();
             } else {
