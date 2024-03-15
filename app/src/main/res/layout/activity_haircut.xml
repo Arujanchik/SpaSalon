@@ -74,6 +74,7 @@
         android:textSize="18sp" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="147dp"
         android:layout_height="85dp"
         android:layout_below="@+id/haircutGrid"
@@ -87,14 +88,34 @@
         android:src="@drawable/score" />
 
     <android.widget.Button
-        android:id="@+id/btn_continue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:textColor="@color/white"
-        android:background="@drawable/rectanglebutton"
-        android:layout_marginBottom="19dp"
-        android:text="Продолжить" />
+        android:id="@+id/btn_description"
+        android:layout_width="314dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/haircutGrid"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="122dp"
+        android:textColor="@color/blue_250"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/descriptionbutton"
+        android:onClick="onDescriptionClick"
+        android:text="Описание" />
+
+
+
+        <android.widget.Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/rectanglebutton"
+            android:text="Продолжить"
+            android:textColor="@color/white" />
 
 
 </RelativeLayout>

@@ -52,6 +52,7 @@
             android:background="@drawable/ellipse">
 
             <ImageView
+                android:id="@+id/img_haircut"
                 android:onClick="onHaircutClick"
                 android:layout_width="51dp"
                 android:layout_height="48dp"
