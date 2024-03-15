@@ -1,5 +1,6 @@
 package com.example.salon.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,14 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.salon.activity.HaircutActivity;
 import com.example.salon.R;
-import androidx.fragment.app.Fragment;
-
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 
 public class HomeFragment extends Fragment {
 
@@ -26,4 +21,9 @@ public class HomeFragment extends Fragment {
 
         return view;
     }
+    public void onHaircutClick(View view) {
+        Intent intent = new Intent(getContext(), HaircutActivity.class);
+        startActivity(intent);
+    }
+
 }
