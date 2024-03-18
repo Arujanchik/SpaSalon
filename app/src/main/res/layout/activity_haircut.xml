@@ -4,13 +4,26 @@
     android:layout_height="match_parent">
 
 
-    <ImageView
-        android:id="@+id/viewPagerImages"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="312dp"
-        android:layout_gravity="center"
         android:layout_marginTop="-3dp"
-        android:src="@drawable/haircutone" />
+        android:id="@+id/viewPagerImages">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/haircutone" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_gravity="top|start"
+            android:layout_margin="16dp"
+            android:background="@drawable/arrowright"
+            android:onClick="onBackClick" />
+    </FrameLayout>
 
     <GridLayout
         android:id="@+id/haircutGrid"
@@ -28,6 +41,9 @@
             android:layout_column="0"
             android:layout_gravity="center"
             android:onClick="onHaircutClick"
+
+            android:background="@drawable/green_background"
+            android:padding="10dp"
             android:layout_marginRight="5dp"
             android:src="@drawable/haircutwo" />
 
@@ -38,6 +54,9 @@
             android:layout_column="1"
             android:layout_marginLeft="5dp"
             android:layout_gravity="center"
+
+            android:background="@drawable/green_background"
+            android:padding="10dp"
             android:onClick="onHaircutClick"
             android:src="@drawable/haircutthree" />
 
@@ -47,7 +66,8 @@
             android:layout_row="0"
             android:layout_column="2"
             android:layout_gravity="center"
-            android:onClick="onHaircutClick"
+            android:background="@drawable/green_background"
+            android:padding="10dp"
             android:src="@drawable/haircutfour" />
 
     </GridLayout>
@@ -72,6 +92,17 @@
         android:layout_marginTop="-3dp"
         android:text="Время: 1 час"
         android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tv_service_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_service_duration"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:text="Цена: 15000 тг"
+        android:textSize="18sp"
+        android:textColor="@color/green_300" />
+
 
     <ImageView
         android:id="@+id/imageView2"
@@ -86,6 +117,16 @@
         android:layout_marginBottom="-25dp"
         android:onClick="onHaircutClick"
         android:src="@drawable/score" />
+    <TextView
+        android:id="@+id/tv_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:text="1280 отзывов"
+        android:textSize="16sp"
+        android:textColor="#1E2022" />
 
     <android.widget.Button
         android:id="@+id/btn_description"
@@ -103,19 +144,17 @@
         android:onClick="onDescriptionClick"
         android:text="Описание" />
 
-
-
-        <android.widget.Button
-            android:id="@+id/btn_continue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="6dp"
-            android:layout_marginBottom="19dp"
-            android:background="@drawable/rectanglebutton"
-            android:text="Продолжить"
-            android:textColor="@color/white" />
-
+    <android.widget.Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/rectanglebutton"
+        android:text="Продолжить"
+        android:textColor="@color/white"
+        android:onClick="onContinueClick" />
 
 </RelativeLayout>

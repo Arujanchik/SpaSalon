@@ -2,6 +2,7 @@ package com.example.salon.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -18,5 +19,12 @@ public class HaircutActivity extends AppCompatActivity {
     public void onDescriptionClick(View view) {
         DescriptionBottomSheetDialogFragment bottomSheet = new DescriptionBottomSheetDialogFragment();
         bottomSheet.show(getSupportFragmentManager(), "DescriptionBottomSheet");
+    }
+    public void onBackClick(View view) {
+        finish();
+    }
+    public void onContinueClick(View view) {
+        Intent intent = new Intent(this, BookActivity.class);
+        startActivity(intent);
     }
 }

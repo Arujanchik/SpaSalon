@@ -9,14 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.salon.R;
-import com.example.salon.Salon;
+import com.example.salon.models.Salon;
 import com.example.salon.adapter.SalonAdapter;
 
-import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 

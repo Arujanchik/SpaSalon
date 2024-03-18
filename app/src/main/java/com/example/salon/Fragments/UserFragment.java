@@ -8,19 +8,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ImageView;
 
 import com.example.salon.R;
-import com.example.salon.User;
+import com.example.salon.models.User;
 import com.example.salon.activity.LoginActivity;
-import com.example.salon.activity.MainActivity;
 
 public class UserFragment extends Fragment {
 

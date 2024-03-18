@@ -13,6 +13,30 @@
         android:theme="@style/Theme.Salon"
         tools:targetApi="31">
         <activity
+            android:name=".activity.SpaBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PillingBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PillingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ManicureBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ManicureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SuccessActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.HaircutActivity"
             android:exported="false" />
         <activity

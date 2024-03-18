@@ -28,6 +28,16 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
+        if (savedInstanceState == null) {
+            int initialFragment = getIntent().getIntExtra("NAVIGATE_TO", -1);
+            if (initialFragment != -1) {
+                bottomNav.setSelectedItemId(initialFragment); // This will trigger the navigation listener
+            } else {
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new HomeFragment()).commit();
+            }
+        }
+
         // При запуске приложения показываем HomeFragment
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

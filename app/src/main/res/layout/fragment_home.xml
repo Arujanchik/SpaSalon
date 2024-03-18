@@ -79,6 +79,7 @@
             android:background="@drawable/ellipse">
 
             <ImageView
+                android:id="@+id/img_manicure"
                 android:layout_width="51dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
@@ -103,6 +104,7 @@
             android:background="@drawable/ellipse">
 
             <ImageView
+                android:id="@+id/img_pilling"
                 android:layout_width="51dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
@@ -127,6 +129,7 @@
             android:background="@drawable/ellipse">
 
             <ImageView
+                android:id="@+id/img_ulitka"
                 android:layout_width="51dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
@@ -151,6 +154,7 @@
             android:background="@drawable/ellipse">
 
             <ImageView
+                android:id="@+id/img_makeup"
                 android:layout_width="51dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
@@ -175,6 +179,7 @@
             android:background="@drawable/ellipse">
 
             <ImageView
+                android:id="@+id/img_massage"
                 android:layout_width="51dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
@@ -272,7 +277,7 @@
                 android:layout_marginEnd="80dp"
                 android:layout_marginBottom="2dp"
                 android:background="@drawable/cardviewbutton"
-                android:text="Успей купить"
+                android:text="Успей купить "
                 android:textColor="@color/white" />
 
 
