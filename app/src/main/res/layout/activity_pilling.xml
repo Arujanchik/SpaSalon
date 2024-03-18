@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="312dp"
+        android:layout_marginTop="-3dp"
+        android:id="@+id/viewPagerImages">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/pillingone" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_gravity="top|start"
+            android:layout_margin="16dp"
+            android:background="@drawable/arrowright"
+            android:onClick="onBackClick" />
+    </FrameLayout>
+
+    <GridLayout
+        android:id="@+id/haircutGrid"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:layout_below="@id/viewPagerImages"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:columnCount="3">
+
+        <ImageView
+            android:layout_width="118dp"
+            android:layout_height="115dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/green_background"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pillingtwo" />
+
+        <ImageView
+            android:layout_width="118dp"
+            android:layout_height="115dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/green_background"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pillingfour" />
+
+        <ImageView
+            android:layout_width="118dp"
+            android:layout_height="115dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:background="@drawable/green_background"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/pillingsix" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tv_service_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/haircutGrid"
+        android:text="Пиллинг"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/tv_service_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_service_title"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-3dp"
+        android:text="Время: 3.5 час"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tv_service_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_service_duration"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:text="Цена: 35 000 тг"
+        android:textSize="18sp"
+        android:textColor="@color/green_300" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="147dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/haircutGrid"
+        android:layout_alignBottom="@+id/tv_service_duration"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="-25dp"
+        android:onClick="onHaircutClick"
+        android:src="@drawable/score" />
+    <TextView
+        android:id="@+id/tv_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:text="6920 отзывов"
+        android:textSize="16sp"
+        android:textColor="#1E2022" />
+
+    <android.widget.Button
+        android:id="@+id/btn_description"
+        android:layout_width="314dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/haircutGrid"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="122dp"
+        android:textColor="@color/blue_250"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/descriptionbutton"
+        android:onClick="pillingOnDescriptionClick"
+        android:text="Описание" />
+
+    <android.widget.Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/rectanglebutton"
+        android:text="Продолжить"
+        android:textColor="@color/white"
+        android:onClick="onContinueClickPilling" />
+
+</RelativeLayout>

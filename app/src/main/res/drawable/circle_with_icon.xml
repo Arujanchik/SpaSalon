@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Основа круга -->
+    <item>
+        <shape
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shape="oval">
+            <solid android:color="#175C4C" /> <!-- Ваш выбранный цвет фона -->
+        </shape>
+    </item>
+    <!-- Иконка лупы, масштабированная и выровненная в центре -->
+    <item
+        android:width="2dp"
+        android:height="2dp"
+        android:drawable="@drawable/lupa"
+        android:gravity="center" />
+</layer-list>
+
+

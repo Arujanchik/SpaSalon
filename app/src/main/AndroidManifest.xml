@@ -13,10 +13,21 @@
         android:theme="@style/Theme.Salon"
         tools:targetApi="31">
         <activity
+            android:name=".MassageBookActivity"
+            android:exported="false" />
+        <activity android:name=".MassageActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".activity.MakeUpBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MakeupActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SpaBookActivity"
             android:exported="false" />
         <activity
-            android:name=".SpaActivity"
+            android:name=".activity.SpaActivity"
             android:exported="false" />
         <activity
             android:name=".activity.PillingBookActivity"

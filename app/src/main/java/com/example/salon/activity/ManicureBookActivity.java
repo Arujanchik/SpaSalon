@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.example.salon.R;
 
-public class SpaBookActivity extends AppCompatActivity {
+public class ManicureBookActivity extends AppCompatActivity {
 
     private EditText etName;
     private EditText etPhone;
@@ -20,7 +20,7 @@ public class SpaBookActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spa_book);
+        setContentView(R.layout.activity_manicure_book);
 
         etName = findViewById(R.id.et_name);
         etPhone = findViewById(R.id.et_phone);
@@ -34,7 +34,6 @@ public class SpaBookActivity extends AppCompatActivity {
         });
     }
 
-
     private void bookNow() {
         String name = etName.getText().toString().trim();
         String phone = etPhone.getText().toString().trim();
@@ -44,7 +43,7 @@ public class SpaBookActivity extends AppCompatActivity {
             return;
         }
 
-        Intent intent = new Intent(SpaBookActivity.this, SuccessActivity.class);
+        Intent intent = new Intent(ManicureBookActivity.this, SuccessActivity.class);
         startActivity(intent);
     }
 }

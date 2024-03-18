@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="В мире, где каждая деталь имеет значение, маникюр становится не просто уходом за ногтями, а искусством, которое позволяет вам выразить свою уникальность и стиль. Это не просто процедура, это путешествие в мир красоты, где каждый ноготь становится холстом, ожидающим оживления."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+</LinearLayout>

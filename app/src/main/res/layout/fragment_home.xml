@@ -183,7 +183,6 @@
                 android:layout_width="51dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
-                android:background="@drawable/ellipse"
                 android:src="@drawable/massage" />
 
             <TextView

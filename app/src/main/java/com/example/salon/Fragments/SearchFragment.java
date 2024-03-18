@@ -45,10 +45,14 @@ public class SearchFragment extends Fragment {
     }
 
     private void loadSalons() {
+
         // Это заглушка. Вы должны добавить настоящие данные салонов.
-        salonList.add(new Salon("Salon 1", "Kutpanova 1", 4.5, R.drawable.kutpanova));
-        salonList.add(new Salon("Salon 2", "Respublica 2", 4.0, R.drawable.respublica));
-        // ... добавьте больше салонов
+        salonList.add(new Salon("Bonanza", "Kutpanova 12", 4.2, R.drawable.bonanza));
+        salonList.add(new Salon("Redken", "Тәуелсіздік 15", 4.2, R.drawable.redkenslogo));
+        salonList.add(new Salon("Tiara Nails","Таха Хусейна",3.5,R.drawable.salonnoman));
+        salonList.add(new Salon("Bogema","Петрова 20",3.5,R.drawable.bogema));
+        salonList.add(new Salon("Imbit Thai Spa","Қажымұқан 1",5,R.drawable.imbirslogan));
+        salonList.add(new Salon("Asia Spa","Янушкевич 17",5,R.drawable.massagsalon));
 
         salonAdapter.notifyDataSetChanged();
     }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image_view_salon"
+        android:layout_width="158dp"
+        android:layout_height="144dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/kutpanova" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/text_view_salon_name"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:text="Salon Name"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/text_view_salon_address"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="Salon Address"
+            android:textAppearance="?attr/textAppearanceListItemSecondary" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_salon"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4.5"
+            android:stepSize="0.5" />
+
+        <android.widget.Button
+            android:id="@+id/btn_go"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/white"
+            android:background="@drawable/rectanglebutton"
+            android:text="Перейти" />
+    </LinearLayout>
+
+</LinearLayout>

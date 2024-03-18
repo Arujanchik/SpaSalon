@@ -2,8 +2,9 @@ package com.example.salon.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
+
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 
 import com.example.salon.R;
 
-public class SpaBookActivity extends AppCompatActivity {
+public class BookActivity extends AppCompatActivity {
 
     private EditText etName;
     private EditText etPhone;
@@ -20,7 +21,7 @@ public class SpaBookActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spa_book);
+        setContentView(R.layout.activity_book);
 
         etName = findViewById(R.id.et_name);
         etPhone = findViewById(R.id.et_phone);
@@ -34,7 +35,6 @@ public class SpaBookActivity extends AppCompatActivity {
         });
     }
 
-
     private void bookNow() {
         String name = etName.getText().toString().trim();
         String phone = etPhone.getText().toString().trim();
@@ -44,7 +44,7 @@ public class SpaBookActivity extends AppCompatActivity {
             return;
         }
 
-        Intent intent = new Intent(SpaBookActivity.this, SuccessActivity.class);
+        Intent intent = new Intent(BookActivity.this, SuccessActivity.class);
         startActivity(intent);
     }
 }

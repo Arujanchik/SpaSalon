@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+  <ImageView
+      android:id="@+id/iv_success_icon"
+      android:layout_width="255dp"
+      android:layout_height="268dp"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/succesimage" />
+  <TextView
+      android:id="@+id/tv_success_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/iv_success_icon"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="24dp"
+      android:text="Успешно забронировано"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:textColor="#175C4C" />
+
+  <TextView
+      android:id="@+id/tv_success_message"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tv_success_title"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="8dp"
+      android:text="Ваш запрос был успешно обработан."
+      android:textSize="16sp"
+      android:textColor="@color/gray_400" />
+
+  <android.widget.Button
+      android:id="@+id/btn_order_history"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tv_success_message"
+      android:layout_marginTop="32dp"
+      android:textColor="@color/white"
+      android:text="вернуться назад"
+      android:background="@drawable/rectanglebutton"
+      android:onClick="onOrderHistoryClick" />
+
+  <android.widget.Button
+      android:id="@+id/btn_back_home"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/btn_order_history"
+      android:layout_marginTop="16dp"
+      android:textColor="@color/white"
+      android:text="на главное меню"
+      android:background="@drawable/rectanglebutton"
+      android:onClick="onBackHomeClick" />
+
+</RelativeLayout>

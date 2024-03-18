@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.salon.SpaActivity;
+import com.example.salon.MassageActivity;
+import com.example.salon.activity.MakeupActivity;
+import com.example.salon.activity.SpaActivity;
 import com.example.salon.activity.ManicureActivity;
 import com.example.salon.activity.HaircutActivity;
 import com.example.salon.R;
@@ -34,6 +36,6 @@ public class HomeFragment extends Fragment {
         view.findViewById(R.id.img_ulitka).setOnClickListener(v -> startActivity(new Intent(getActivity(), SpaActivity.class)));
         view.findViewById(R.id.img_makeup).setOnClickListener(v -> startActivity(new Intent(getActivity(), MakeupActivity.class)));
         view.findViewById(R.id.img_massage).setOnClickListener(v -> startActivity(new Intent(getActivity(), MassageActivity.class)));
-        view.findViewById(R.id.btn_all_services).setOnClickListener(v -> startActivity(new Intent(getActivity(), AllServicesActivity.class)));
+        //view.findViewById(R.id.btn_all_services).setOnClickListener(v -> startActivity(new Intent(getActivity(), AllServicesActivity.class)));
     }
 }

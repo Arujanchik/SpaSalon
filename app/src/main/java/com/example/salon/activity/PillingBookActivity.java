@@ -11,8 +11,7 @@ import android.widget.Toast;
 
 import com.example.salon.R;
 
-public class SpaBookActivity extends AppCompatActivity {
-
+public class PillingBookActivity extends AppCompatActivity {
     private EditText etName;
     private EditText etPhone;
     private Button btnBook;
@@ -20,7 +19,7 @@ public class SpaBookActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spa_book);
+        setContentView(R.layout.activity_pilling_book);
 
         etName = findViewById(R.id.et_name);
         etPhone = findViewById(R.id.et_phone);
@@ -34,7 +33,6 @@ public class SpaBookActivity extends AppCompatActivity {
         });
     }
 
-
     private void bookNow() {
         String name = etName.getText().toString().trim();
         String phone = etPhone.getText().toString().trim();
@@ -44,7 +42,7 @@ public class SpaBookActivity extends AppCompatActivity {
             return;
         }
 
-        Intent intent = new Intent(SpaBookActivity.this, SuccessActivity.class);
+        Intent intent = new Intent(PillingBookActivity.this, SuccessActivity.class);
         startActivity(intent);
     }
 }
