@@ -58,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
                         selectedFragment = new SearchFragment();
                     } else if (id == R.id.nav_calendar) {
                         selectedFragment = new CalendarFragment();
-                    } else if (id == R.id.nav_profile) {
-                        selectedFragment = new UserFragment();
                     }
 
                     if (selectedFragment != null) {

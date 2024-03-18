@@ -1,5 +1,7 @@
 package com.example.salon.adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,15 +18,16 @@ import java.util.List;
 public class SalonAdapter extends RecyclerView.Adapter<SalonAdapter.SalonViewHolder> {
 
     private List<Salon> salonList;
+    private Context context;
 
-    public SalonAdapter(List<Salon> salonList) {
+    public SalonAdapter(Context context, List<Salon> salonList) {
+        this.context = context;
         this.salonList = salonList;
     }
 
     @Override
     public SalonViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_salon, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_salon, parent, false);
         return new SalonViewHolder(itemView);
     }
 
@@ -35,6 +38,17 @@ public class SalonAdapter extends RecyclerView.Adapter<SalonAdapter.SalonViewHol
         holder.salonAddress.setText(salon.getAddress());
         holder.salonRating.setRating((float) salon.getRating());
         holder.salonImage.setImageResource(salon.getImageResourceId());
+
+        holder.itemView.setOnClickListener(v -> {
+            // Используем Reflection для получения класса активности из строки
+            try {
+                Class<?> activityClass = Class.forName(context.getPackageName() + ".activity." + salon.getActivityName());
+                Intent intent = new Intent(context, activityClass);
+                context.startActivity(intent);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        });
     }
 
     @Override
@@ -56,4 +70,3 @@ public class SalonAdapter extends RecyclerView.Adapter<SalonAdapter.SalonViewHol
         }
     }
 }
-

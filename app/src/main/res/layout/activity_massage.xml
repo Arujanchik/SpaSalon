@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
-            android:src="@drawable/pillingone" />
+            android:src="@drawable/massageone" />
 
         <ImageButton
             android:id="@+id/btn_back"
@@ -45,7 +45,7 @@
             android:background="@drawable/green_background"
             android:padding="10dp"
             android:scaleType="fitXY"
-            android:src="@drawable/pillingtwo" />
+            android:src="@drawable/massagetwo" />
 
         <ImageView
             android:layout_width="118dp"
@@ -57,7 +57,7 @@
             android:background="@drawable/green_background"
             android:padding="10dp"
             android:scaleType="fitXY"
-            android:src="@drawable/pillingfour" />
+            android:src="@drawable/massagethree" />
 
         <ImageView
             android:layout_width="118dp"
@@ -68,7 +68,7 @@
             android:padding="10dp"
             android:layout_gravity="center"
             android:scaleType="fitXY"
-            android:src="@drawable/pillingsix" />
+            android:src="@drawable/massagefour" />
 
     </GridLayout>
 
@@ -77,7 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/haircutGrid"
-        android:text="Пиллинг"
+        android:text="Массаж"
         android:textStyle="bold"
         android:textColor="@android:color/black"
         android:textSize="24sp" />
@@ -90,7 +90,7 @@
         android:layout_below="@id/tv_service_title"
         android:layout_marginStart="1dp"
         android:layout_marginTop="-3dp"
-        android:text="Время: 3.5 час"
+        android:text="Время: 2 час"
         android:textSize="18sp" />
     <TextView
         android:id="@+id/tv_service_price"
@@ -99,7 +99,7 @@
         android:layout_below="@id/tv_service_duration"
         android:layout_marginStart="1dp"
         android:layout_marginTop="8dp"
-        android:text="Цена: 35 000 тг"
+        android:text="Цена: 50 000 тг"
         android:textSize="18sp"
         android:textColor="@color/green_300" />
 
@@ -115,7 +115,7 @@
         android:layout_marginTop="-6dp"
         android:layout_marginEnd="17dp"
         android:layout_marginBottom="-25dp"
-        android:src="@drawable/score" />
+        android:src="@drawable/scorefour" />
     <TextView
         android:id="@+id/tv_reviews"
         android:layout_width="wrap_content"
@@ -123,25 +123,25 @@
         android:layout_below="@id/imageView2"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="17dp"
-        android:text="6920 отзывов"
+        android:text="601 отзывов"
         android:textSize="16sp"
         android:textColor="#1E2022" />
 
     <android.widget.Button
         android:id="@+id/btn_description"
         android:layout_width="314dp"
-        android:layout_height="43dp"
+        android:layout_height="48dp"
         android:layout_below="@+id/haircutGrid"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="51dp"
         android:layout_marginTop="122dp"
-        android:textColor="@color/blue_250"
         android:layout_marginEnd="46dp"
         android:layout_marginBottom="11dp"
         android:background="@drawable/descriptionbutton"
-        android:onClick="pillingOnDescriptionClick"
-        android:text="Описание" />
+        android:onClick="massageOnDescriptionClick"
+        android:text="Описание"
+        android:textColor="@color/blue_250" />
 
     <android.widget.Button
         android:id="@+id/btn_continue"
@@ -154,6 +154,6 @@
         android:background="@drawable/rectanglebutton"
         android:text="Продолжить"
         android:textColor="@color/white"
-        android:onClick="onContinueClickPilling" />
+        android:onClick="onContinueClickMassage" />
 
 </RelativeLayout>

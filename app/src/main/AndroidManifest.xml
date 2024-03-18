@@ -13,10 +13,17 @@
         android:theme="@style/Theme.Salon"
         tools:targetApi="31">
         <activity
+            android:name=".SuccessPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CertificateActivity"
+            android:exported="false" />
+        <activity
             android:name=".MassageBookActivity"
             android:exported="false" />
-        <activity android:name=".MassageActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".MassageActivity"
+            android:exported="false" />
         <activity
             android:name=".activity.MakeUpBookActivity"
             android:exported="false" />
@@ -71,6 +78,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

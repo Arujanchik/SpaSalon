@@ -27,5 +27,9 @@ public class SuccessActivity extends AppCompatActivity {
     public void onOrderHistoryClick(View view) {
         finish();
     }
+    public void onBackClick(View view) {
+        finish();
+    }
+
 
 }

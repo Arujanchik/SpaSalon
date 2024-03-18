@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:background="@drawable/green_background"
     android:padding="16dp">
 
     <ImageView
@@ -42,13 +43,14 @@
             android:rating="4.5"
             android:stepSize="0.5" />
 
-        <android.widget.Button
+        <TextView
             android:id="@+id/btn_go"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:textColor="@color/white"
             android:background="@drawable/rectanglebutton"
+            android:gravity="center"
             android:text="Перейти" />
     </LinearLayout>
 

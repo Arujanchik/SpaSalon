@@ -2,9 +2,8 @@ package com.example.salon.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,7 +11,8 @@ import android.widget.Toast;
 
 import com.example.salon.R;
 
-public class BookActivity extends AppCompatActivity {
+public class MakeUpBookActivity extends AppCompatActivity {
+
 
     private EditText etName;
     private EditText etPhone;
@@ -21,7 +21,7 @@ public class BookActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_book);
+        setContentView(R.layout.activity_make_up_book);
 
         etName = findViewById(R.id.et_name);
         etPhone = findViewById(R.id.et_phone);
@@ -44,7 +44,7 @@ public class BookActivity extends AppCompatActivity {
             return;
         }
 
-        Intent intent = new Intent(BookActivity.this, SuccessActivity.class);
+        Intent intent = new Intent(MakeUpBookActivity.this, SuccessActivity.class);
         startActivity(intent);
     }
     public void onBackClick(View view) {

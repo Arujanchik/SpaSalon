@@ -46,4 +46,8 @@ public class ManicureBookActivity extends AppCompatActivity {
         Intent intent = new Intent(ManicureBookActivity.this, SuccessActivity.class);
         startActivity(intent);
     }
+    public void onBackClick(View view) {
+        finish();
+    }
+
 }

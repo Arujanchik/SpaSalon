@@ -23,4 +23,8 @@ public class SpaActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SpaBookActivity.class);
         startActivity(intent);
     }
+    public void onBackClick(View view) {
+        finish();
+    }
+
 }

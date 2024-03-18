@@ -1,18 +1,18 @@
-package com.example.salon.activity;
+package com.example.salon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.salon.R;
+import com.example.salon.activity.SpaBookActivity;
+import com.example.salon.activity.SuccessActivity;
 
-public class BookActivity extends AppCompatActivity {
+public class MassageBookActivity extends AppCompatActivity {
 
     private EditText etName;
     private EditText etPhone;
@@ -21,7 +21,7 @@ public class BookActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_book);
+        setContentView(R.layout.activity_massage_book);
 
         etName = findViewById(R.id.et_name);
         etPhone = findViewById(R.id.et_phone);
@@ -44,11 +44,12 @@ public class BookActivity extends AppCompatActivity {
             return;
         }
 
-        Intent intent = new Intent(BookActivity.this, SuccessActivity.class);
+        Intent intent = new Intent(MassageBookActivity.this, SuccessActivity.class);
         startActivity(intent);
     }
     public void onBackClick(View view) {
         finish();
     }
+
 
 }

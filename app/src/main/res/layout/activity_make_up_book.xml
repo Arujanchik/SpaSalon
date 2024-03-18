@@ -9,16 +9,16 @@
         android:id="@+id/viewPagerImages"
         android:layout_width="wrap_content"
         android:layout_height="293dp"
-        android:background="@drawable/succesback"
         android:layout_marginTop="-3dp">
 
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="387dp"
-            android:src="@drawable/kutpanova" />
+            android:layout_width="376dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/redken" />
 
-        <android.widget.ImageButton
+        <ImageButton
             android:id="@+id/btn_back"
             android:layout_width="57dp"
             android:layout_height="57dp"
@@ -67,7 +67,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:scaleType="fitXY"
-            android:src="@drawable/bonanza" />
+            android:src="@drawable/redkenslogo" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -80,7 +80,7 @@
                 android:id="@+id/text_view_salon_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bonanza"
+                android:text="Redken"
                 android:fontFamily="sans-serif-black"
                 android:textAppearance="?attr/textAppearanceListItem" />
 
@@ -88,7 +88,7 @@
                 android:id="@+id/text_view_salon_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Кутпанова 12"
+                android:text="Тәуелсіздік 15"
                 android:textAppearance="?attr/textAppearanceListItemSecondary" />
 
             <RatingBar
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:numStars="5"
                 android:stepSize="0.5"
-                android:rating="4.5" />
+                android:rating="4.3" />
         </LinearLayout>
     </LinearLayout>
 

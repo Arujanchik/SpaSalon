@@ -32,6 +32,10 @@ public class PillingBookActivity extends AppCompatActivity {
             }
         });
     }
+    public void onBackClick(View view) {
+        finish();
+    }
+
 
     private void bookNow() {
         String name = etName.getText().toString().trim();

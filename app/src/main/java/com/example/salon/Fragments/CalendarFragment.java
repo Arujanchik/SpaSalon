@@ -31,9 +31,8 @@ public class CalendarFragment extends Fragment {
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
-                String date = dayOfMonth + "/" + (month + 1) + "/" + year; // В месяцах +1, потому что январь = 0
+                String date = dayOfMonth + "/" + (month + 1) + "/" + year;
                 Toast.makeText(getContext(), "Selected date: " + date, Toast.LENGTH_SHORT).show();
-                // Вы можете выполнить другие действия при выборе даты, например, открыть диалоговое окно бронирования
             }
         });
 
